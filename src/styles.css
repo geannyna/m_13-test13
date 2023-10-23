@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #404d5f;
+  margin-top: 80px;
+}
+
+.form-container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+button{
+ width: 200px;
+ height: 40px;
+ margin-left: 18px;
+ border-radius: 30px;
+ background:#047738 ;
+ color: white;
+ font-size: 20px;
+ border: 1px solid #02602c;
+}
+input{
+  font-size: 20px;
+  border-radius: 5px;
+  border: 3px solid #047738;
+}
+ul{
+ text-align: center;
+ font-size: 20px;
+ 
+}
+li{
+  margin-bottom: 5px;
+}
+.completed-task {
+  color: green; 
+  font-weight: bold;
+  
+}
+span{
+  margin-left: 45px;
+  margin-right: 2px;
+}
+.pending-task {
+  color: red; 
+  font-weight: bold;
+  
+}
+.checkbox{
+  padding: 15px;
+  margin-right: 3px;
+}
+.completed-task .pending-task {
+  display: none;
+}
+.top-bar{
+  font-size: 20px;
+  font-weight: bold;
+  color:  #f4f7f5;
+  margin-bottom: 10px;
+  background-color:#047738;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  
+}
+.tareas{
+  margin-left: 10px;
+}
+

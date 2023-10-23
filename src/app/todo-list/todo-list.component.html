@@ -1,0 +1,12 @@
+<div class="tabla">
+<ul>
+  <li *ngFor="let todo of todos" [ngClass]="{'completed': todo.completed}">
+    <span>{{ todo.title }}</span>
+    <span *ngIf="todo.completed" class="completed-task">Completada</span>
+    <span *ngIf="!todo.completed" class="pending-task">Pendiente</span>
+    <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" (change)="markAsCompleted(todos.indexOf(todo))" />
+    <button (click)="removeTodo(todo)">Eliminar</button>
+    
+  </li>
+</ul>
+</div>
